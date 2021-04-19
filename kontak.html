@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Layout Sederhana</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		 			form p > label {
+						 display: inline-block;
+						 width: 100px;
+		 			}
+						 form input[type="text"], form textarea {
+						 border: 1px solid #197a43;
+		 			}
+						 form input[type="submit"] {
+						 border: 1px solid #197a43;
+						 background-color: #197a43;
+						 color: #ffffff;
+						 font-weight: bold;
+						 padding: 5px 15px;
+					 }
+				</style>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>Kontak</h1>
+		</header>
+		<nav>
+			<a href="home.html" class="active">Home</a>
+			<a href="artikel.html">Artikel</a>
+			<a href="about.html">About</a>
+			<a href="kontak.html">Kontak</a>
+		</nav>
+		<section id="hero">
+			<h1>Kontak Saya</h1>
+			<form action="proses.php" method="post">
+				<fieldset>
+					<p>
+						<label for="nama">Nama</label>
+						<input type="text" name="nama" id="nama" placeholder="Masukan Nama">
+					</p>
+					<p>
+						<label for="pesan">Message</label>
+						<input type="text" name="pesan" id="pesan" placeholder="Masukan Pesan">
+					</p>
+					<p>
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" placeholder="Masukan Email">
+					</p>
+					<p>
+						<input type="submit" value="Kirim">
+					</p>
+				</fieldset>
+				
+			</form>
+		</section>
+		<section id="wrapper">
+			<section id="main">
+			</section>
+			<aside id="sidebar">
+				<div class="widget-box">
+			</aside>
+		</section>
+		<footer>
+			<p>&copy; 2021 - Universitas Pelita Bangsa</p>
+		</footer>
+	</div>
+</body>
+</html>
